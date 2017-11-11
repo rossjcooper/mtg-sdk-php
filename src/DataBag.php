@@ -30,4 +30,10 @@ trait DataBag
 
         throw new \UnexpectedValueException("Invalid property: [$name]");
     }
+
+    public function JsonSerialize()
+    {
+        return $this->data;
+    }
+    
 }
