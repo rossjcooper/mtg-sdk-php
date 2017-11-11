@@ -2,7 +2,7 @@
 
 namespace mtgsdk;
 
-class Subtype
+class Subtype implements \JsonSerializable
 {
     use DataBag, QueriesAllAsArray;
 

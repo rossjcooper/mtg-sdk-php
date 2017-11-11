@@ -8,7 +8,7 @@ namespace mtgsdk;
  * @property-read $details
  * @property-read $releaseDate
  */
-class Changelog
+class Changelog implements \JsonSerializable
 {
     use DataBag, QueriesAll;
 
